@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shahkhan.collegeplanner.addAssignment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="127dp">
+
+        <Button
+            android:id="@+id/choose_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp"
+            android:text="Choose subject" />
+
+        <Button
+            android:id="@+id/assignment_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/due_date"
+            android:layout_alignStart="@+id/due_date"
+            android:layout_below="@+id/choose_subject"
+            android:text="Add Details" />
+
+
+        <Button
+            android:id="@+id/due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setDate"
+            android:text="@string/date_button_set"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/assignment_desc"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_view_set"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="72dp"
+            android:text="@string/date_selected"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:text="Save"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button"
+            android:text="Cancel" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
